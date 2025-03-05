@@ -37,7 +37,7 @@ function addCar(event) {
     var year = parseInt(document.getElementById("year").value);
     var price = parseFloat(document.getElementById("price").value);
 
-    var cars = JSON.parse(localStorage, getItem("cars")) || [];
+    var cars = JSON.parse(localStorage.getItem("cars")) || [];
     cars.push({ model: model, year: year, price: price });
 
     safeCars(cars);
