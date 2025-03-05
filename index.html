@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Carros</title>
+</head>
+
+<body>
+
+    <div class="container mt-5 d-flex justify-content-center">
+        <div class="row justfy-content-center">
+            <h1 class="d-flex justify-content-center">Cadastro de Carros</h1>
+            <form class="mb-4" id="car-form" action="">
+                <section class="md-3">
+                    <p class="mt-3 mb-0">Modelo do Carro</p>
+                    <input class="form-control " type="text" id="model" placeholder="Insira o modelo" required>
+                </section>
+                <section class="md-3">
+                    <p class="mt-3 mb-0">Ano</p>
+                    <input class="form-control" type="number" name="" id="year" placeholder="Insira o ano" required
+                        min="1900" max="2099">
+                </section>
+                <section class="md-3 ">
+                    <p class="mt-3 mb-0">Valor(R$)</p>
+                    <input class="form-control " type="number" id="price" placeholder="Insira o valor" required>
+                </section>
+                <button type="submit" class="btn btn-primary mt-4 w-100">Adicionar Carro</button>
+            </form>
+            <h1 class="d-flex justify-content-center">Carros cadastrados</h1>
+            <ul id="car-list" class="list-group mt-3"></ul>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
