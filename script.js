@@ -40,12 +40,12 @@ function addCar(event) {
     var cars = JSON.parse(localStorage.getItem("cars")) || [];
     cars.push({ model: model, year: year, price: price });
 
-    safeCars(cars);
+    saveCars(cars);
     loadCars();
 }
 
 //Salvar os carros, ou adicioná-los no localStorage
 
-function safeCars(cars) {
+function saveCars(cars) {
     localStorage.setItem("cars", JSON.stringify(cars));
 }
